@@ -1,4 +1,4 @@
-from pkg_resources import parse_version
+from packaging.version import parse as parse_version
 import Crypto
 __all__ = ["Cipher","PublicKey","Util","Protocol","Hash","testvectors","SelfTest"]
 

@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from .blockcipher import *
 import Crypto.Cipher.ARC2
 import Crypto
-from pkg_resources import parse_version
+from packaging.version import parse as parse_version
 
 def new(key,mode=MODE_ECB,IV=None,counter=None,segment_size=None,effective_keylen=None):
     """Create a new cipher object

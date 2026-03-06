@@ -5,9 +5,9 @@ makes the Util modules from Crypto AND CryptoPlus available here
 from __future__ import absolute_import
 #import Crypto
 #from Crypto.Util import number, randpool, RFC1751
-from . import padding, util, python_compat, number, randpool, RFC1751
+from . import padding, util, python_compat, number, randpool #, RFC1751
 
-from pkg_resources import parse_version
+from packaging.version import parse as parse_version
 
 __all__ = ["padding","util","number","randpool","RFC1751","python_compat"]
 
